@@ -8,6 +8,8 @@ import com.example.core.source.local.room.DataDatabase
 import com.example.core.source.remote.RemoteDataSource
 import com.example.core.source.remote.api.ApiService
 import com.example.core.utils.AppExecutors
+import net.sqlcipher.database.SQLiteDatabase
+import net.sqlcipher.database.SupportFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.android.ext.koin.androidContext
@@ -19,10 +21,14 @@ import java.util.concurrent.TimeUnit
 val databaseModule = module {
     factory { get<DataDatabase>().dataDao() }
     single {
+        val passphrase: ByteArray = SQLiteDatabase.getBytes("example".toCharArray())
+        val factory = SupportFactory(passphrase)
         Room.databaseBuilder(
             androidContext(),
             DataDatabase::class.java, "Data.db"
-        ).fallbackToDestructiveMigration().build()
+        ).fallbackToDestructiveMigration()
+            .openHelperFactory(factory)
+            .build()
     }
 }
 
