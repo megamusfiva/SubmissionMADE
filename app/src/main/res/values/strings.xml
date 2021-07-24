@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NET MOVIE</string>
+    <string name="name">Nama</string>
+    <string name="rating">Peringkat :</string>
+    <string name="tanggal">17 May 1999</string>
+    <string name="overview">Ikhtisar</string>
+    <string name="release">Tanggal Rilis</string>
+    <string name="nama">Nama Lengkap Movie dan Tv Show</string>
+    <string name="setting">Setelan</string>
+    <string name="movies">Movies</string>
+    <string name="tvshow">Tv Show</string>
+    <string name="todo">TODO</string>
+    <string name="something_wrong">Ada yang tidak beres</string>
+    <string name="favorite">Favorit</string>
+    <string name="empty">Tidak Ada Favorit</string>
+    <string name="background">Tampilan Latar Belakang</string>
+    <string name="poster_path">Tampilan Poster</string>
+    <string name="background_apps">Latar Belakang Aplikasi</string>
+    <string name="logo">Logo</string>
+    <string name="title_favorite">Module Title</string>
+    <string name="language">Bahasa</string>
+    <string name="changelanguage">Ganti Bahasa</string>
+</resources>

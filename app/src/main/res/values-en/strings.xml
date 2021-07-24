@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NET MOVIE</string>
+    <string name="name">Name</string>
+    <string name="rating">Rating :</string>
+    <string name="tanggal">17 May 1999</string>
+    <string name="overview">Overview</string>
+    <string name="release">Release Date</string>
+    <string name="nama">Full Name of Movie and Tv Show</string>
+    <string name="setting">Setting</string>
+    <string name="movies">Movies</string>
+    <string name="tvshow">Tv Show</string>
+    <string name="todo">TODO</string>
+    <string name="something_wrong">Something Wrong</string>
+    <string name="favorite">Favorite</string>
+    <string name="empty">No Favorite</string>
+    <string name="background">Backdrop Path</string>
+    <string name="poster_path">Poster Path</string>
+    <string name="background_apps">Background Apps</string>
+    <string name="logo">Logo</string>
+    <string name="title_favorite">Module Title</string>
+    <string name="language">Language</string>
+    <string name="changelanguage">Change Language</string>
+</resources>
