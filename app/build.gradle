@@ -23,11 +23,13 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField("String", "TMDbAPIKEY", '"57dd8dce58d9a17c2c5b689da400f505"')
         }
         debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField("String", "TMDbAPIKEY", '"57dd8dce58d9a17c2c5b689da400f505"')
         }
     }
